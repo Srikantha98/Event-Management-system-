@@ -5,6 +5,10 @@
 
 This project is an Event Management System built using Flask, which enables users to manage and discover events based on their location and date. The system integrates with external APIs to provide weather forecasts and calculate distances between locations.
 
+ **Deployment**
+
+This project is deployed on Vercel. Click https://event-management-system-gold.vercel.app/ to view the deployed application.
+
 ![Event Management System](<image_url>)
 
 **Features**
@@ -90,10 +94,6 @@ Contributions are welcome! Please follow these guidelines:
 2. Create a new branch 
 3. Make your changes 
 4. Submit a pull request 
-
-## Deployment
-
-This project is deployed on Vercel. Click https://event-management-system-gold.vercel.app/ to view the deployed application.
 
 ## Contact 
 
