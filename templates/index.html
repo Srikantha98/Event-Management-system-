@@ -82,6 +82,14 @@
                                            <strong>Distance:</strong> ${event.distance_km} km<br><br>`;
                     eventsList.appendChild(eventItem);
                 });
+
+                // Append additional information about pagination
+                const pageInfo = document.createElement('div');
+                pageInfo.innerHTML = `Page: ${data.page}<br>
+                                      Page Size: ${data.pageSize}<br>
+                                      Total Events: ${data.totalEvents}<br>
+                                      Total Pages: ${data.totalPages}<br>`;
+                eventsList.appendChild(pageInfo);
             })
             .catch(error => console.error('Error:', error))
             .finally(() => {
