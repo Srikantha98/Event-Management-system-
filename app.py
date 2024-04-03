@@ -65,7 +65,7 @@ def find_events():
     date = request.args.get('date')
 
     # Load events data from CSV file
-    csv_file_path = r"events.csv"
+    csv_file_path = r"E:\Event management system\events.csv"
     events_data = load_event_data(csv_file_path)
 
     # Filter events occurring within the next 14 days from the specified date
@@ -111,6 +111,3 @@ def disable_favicon(response):
     if request.path == '/favicon.ico':
         return app.response_class(status=404)
     return response
-
-if __name__ == '__main__':
-    app.run(debug=True)
